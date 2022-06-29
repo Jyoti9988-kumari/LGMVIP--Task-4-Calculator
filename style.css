@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+body {
+    /* margin: 0;
+    padding: 0;
+    box-sizing: border-box; */
+    color: #caabab;
+    background: linear-gradient(#bfb8e4, #5c6989, #bfb8e4);
+}
+
+.searchBox {
+    position: relative;
+    height: 40px;
+    width: 600px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 4rem;
+    margin-left: 26rem;
+    transition: 0.9s;
+}
+
+input::placeholder {
+    color: white;
+}
+
+
+/* .shadow {
+    position: absolute;
+    top: 0;
+    left: -0.9px;
+    width: 92%;
+    height: 200px;
+    background: linear-gradient( 180deg, rgba(0, 0, 0, 0.1), transparent, transparent);
+    transform-origin: top;
+    transform: skew(45deg);
+    pointer-events: none;
+}
+
+.shadow::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 44px;
+    background: #aea5da;
+    z-index: 1;
+    filter: blur(2px);
+} */
+
+.searchBox input {
+    position: relative;
+    width: 0%;
+    height: 80%;
+    border: 0;
+    padding: 8px 9px;
+    font-size: 1.2rem;
+    color: rgba(233, 212, 20, 0.333);
+    background: linear-gradient(#aa9ce6, #69717f);
+    /* background: linear-gradient(#cac6dc, #a3aaba); */
+    /* box-shadow: 5px 5px 5px rgba(233, 213, 213, 0.1), 15px 15px 15px rgba(0, 0, 0, 0.1), 20px 20px 15px rgba(0, 0, 0, 0.1), 30px 30px 15px rgba(0, 0, 0, 0.1);
+    inset: 2px 3px 3px #fff; */
+    transition: all 1000ms ease-in;
+    outline: none;
+    font-weight: bold;
+}
+
+.searchBox:hover input {
+    width: 80%;
+}
+
+.searchBox::after {
+    content: "";
+    position: absolute;
+    top: 1;
+    left: 3rem;
+    width: 10px;
+    height: 120%;
+    background: linear-gradient(#fff, #fff, #e3e3e3);
+    z-index: 2;
+    filter: blur(1px);
+}
+
+.searchBox::before {
+    content: "";
+    position: absolute;
+    top: 1;
+    right: 3rem;
+    width: 12px;
+    height: 120%;
+    background: #aea5da;
+    z-index: 2;
+    filter: blur(1px);
+}
+
+
+/* .h1 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 150rem;
+} */
+
+.calculator {
+    padding: 10px;
+    border-radius: 3rem;
+    height: 440px;
+    width: 400px;
+    margin: auto;
+    background-color: #52414172;
+    /* box-shadow: rgba(97, 82, 21, 0.907) 0px 10px 20px, rgba(24, 06, 206, 0.23) 0px 6px 6px; */
+    margin-top: 10rem;
+    margin-left: 33rem;
+    box-shadow: 5px 5px 5px rgba(233, 213, 213, 0.1), 15px 15px 15px rgba(246, 230, 230, 0.1), 20px 20px 15px rgba(226, 214, 214, 0.1), 30px 30px 15px rgba(0, 0, 0, 0.1);
+    inset: 2px 3px 3px rgb(246, 241, 241);
+}
+
+.calculator {
+    position: relative;
+    box-shadow: 25px 25px 75px rgba(0, 0, 0, 25), 10px 1px 70px rgba(red, rgb(28, 34, 28), rgb(0, 0, 0), alpha);
+    inset: -5px -5px 75px rgba(0, 0, 0, 0);
+}
+
+.display-box {
+    font-family: "Orbitron", sans-serif;
+    background-color: #8e88b7;
+    border: solid #bc4918 2.5px;
+    color: rgb(26, 21, 21);
+    border-radius: 20px;
+    width: 100%;
+    height: 65%;
+    font-size: 1rem;
+}
+
+#btn {
+    /* background-color: #ee3907;
+    border-color: #dcea14;
+} */
+    background: #f53d0f;
+    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+    -moz-box-shadow: inset 0px 0px 5px #dbcfcf;
+    box-shadow: inset 0px 0px 12px #f6e4e4;
+}
+
+input[type="button"] {
+    font-family: "Orbitron", sans-serif;
+    background-color: #5d5265;
+    color: rgb(246, 242, 242);
+    border: solid black 0.5px;
+    width: 90%;
+    border-radius: 5px;
+    height: 70%;
+    outline: none;
+    font-size: 1.5rem;
+    border-radius: 4rem;
+}
+
+input:active[type="button"] {
+    background: #8c0c0c;
+    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+    -moz-box-shadow: inset 0px 0px 5px #dbcfcf;
+    box-shadow: inset 0px 0px 12px #f6e4e4;
+}
+
+ion-icon {
+    position: absolute;
+    right: 220px;
+    color: whitesmoke;
+    font-size: 2rem;
+    cursor: pointer;
+    right: 68px;
+}
